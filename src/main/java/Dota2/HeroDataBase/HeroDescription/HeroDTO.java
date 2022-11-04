@@ -1,0 +1,52 @@
+package Dota2.HeroDataBase.HeroDescription;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.stereotype.Component;
+
+import java.util.ArrayList;
+
+@Component
+@lombok.Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+public class HeroDTO {
+    public int id;
+    public String name;
+    public double order_id;
+    public String name_loc;
+    public String bio_loc;
+    public String hype_loc;
+    public String npe_desc_loc;
+    public double str_base;
+    public double str_gain;
+    public double agi_base;
+    public double agi_gain;
+    public double int_base;
+    public double int_gain;
+    public double primary_attr;
+    public double complexity;
+    public double attack_capability;
+    public ArrayList<Integer> role_levels;
+    public double damage_min;
+    public double damage_max;
+    public double attack_rate;
+    public double attack_range;
+    public double projectile_speed;
+    public double armor;
+    public double magic_resistance;
+    public double movement_speed;
+    public double turn_rate;
+    public double sight_range_day;
+    public double sight_range_night;
+    public double max_health;
+    public double health_regen;
+    public double max_mana;
+    public double mana_regen;
+    public ArrayList<AbilityDTO> abilities;
+    public ArrayList<TalentDTO> talents;
+}
